@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on linux)" generated="20220206 20:36:51.934" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="TestCaseExemploFakerLibrary" source="/opt/robotframework/tests/TestCaseExemploFakerLibrary.robot">
+<test id="s1-s1-t1" name="Imprime exemplos de utilidades da library FakerLibrary">
+<kw name="Exemplos relacionados a pessoa">
+<kw name="Name" library="FakerLibrary">
+<var>${NOMEFAKE}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20220206 20:36:52.317" level="INFO">${NOMEFAKE} = Valerie Gardner</msg>
+<status status="PASS" starttime="20220206 20:36:52.316" endtime="20220206 20:36:52.317"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${ENDERECOFAKE}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20220206 20:36:52.319" level="INFO">${ENDERECOFAKE} = 73564 Elizabeth Crossing Apt. 571
+East Kimberly, NY 45504</msg>
+<status status="PASS" starttime="20220206 20:36:52.318" endtime="20220206 20:36:52.319"/>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<var>${TELEFONEFAKE}</var>
+<msg timestamp="20220206 20:36:52.320" level="INFO">${TELEFONEFAKE} = (918)906-2742</msg>
+<status status="PASS" starttime="20220206 20:36:52.319" endtime="20220206 20:36:52.320"/>
+</kw>
+<kw name="City" library="FakerLibrary">
+<var>${CIDADEFAKE}</var>
+<doc>:example: 'Sashabury'</doc>
+<msg timestamp="20220206 20:36:52.321" level="INFO">${CIDADEFAKE} = East Markbury</msg>
+<status status="PASS" starttime="20220206 20:36:52.320" endtime="20220206 20:36:52.321"/>
+</kw>
+<kw name="Postalcode" library="FakerLibrary">
+<var>${CODIGOPOSTALFAKE}</var>
+<msg timestamp="20220206 20:36:52.322" level="INFO">${CODIGOPOSTALFAKE} = 86665</msg>
+<status status="PASS" starttime="20220206 20:36:52.321" endtime="20220206 20:36:52.322"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${TRABALHOFAKE}</var>
+<msg timestamp="20220206 20:36:52.323" level="INFO">${TRABALHOFAKE} = Designer, television/film set</msg>
+<status status="PASS" starttime="20220206 20:36:52.322" endtime="20220206 20:36:52.323"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{PESSOA}</var>
+<arg>Nome Aleatório: ${NOMEFAKE}</arg>
+<arg>Endereço Aleatório: ${ENDERECOFAKE}</arg>
+<arg>Telefone Aleatório: ${TELEFONEFAKE}</arg>
+<arg>Cidade Aleatória: ${CIDADEFAKE}</arg>
+<arg>CódigoPostal Aleatório: ${CODIGOPOSTALFAKE}</arg>
+<arg>Trabalho: ${TRABALHOFAKE}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220206 20:36:52.329" level="INFO">@{PESSOA} = [ Nome Aleatório: Valerie Gardner | Endereço Aleatório: 73564 Elizabeth Crossing Apt. 571
+East Kimberly, NY 45504 | Telefone Aleatório: (918)906-2742 | Cidade Aleatória: East Markbury | CódigoPostal A...</msg>
+<status status="PASS" starttime="20220206 20:36:52.324" endtime="20220206 20:36:52.329"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{PESSOA}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220206 20:36:52.330" level="INFO">Nome Aleatório: Valerie Gardner</msg>
+<msg timestamp="20220206 20:36:52.330" level="INFO">Endereço Aleatório: 73564 Elizabeth Crossing Apt. 571
+East Kimberly, NY 45504</msg>
+<msg timestamp="20220206 20:36:52.330" level="INFO">Telefone Aleatório: (918)906-2742</msg>
+<msg timestamp="20220206 20:36:52.330" level="INFO">Cidade Aleatória: East Markbury</msg>
+<msg timestamp="20220206 20:36:52.330" level="INFO">CódigoPostal Aleatório: 86665</msg>
+<msg timestamp="20220206 20:36:52.330" level="INFO">Trabalho: Designer, television/film set</msg>
+<status status="PASS" starttime="20220206 20:36:52.330" endtime="20220206 20:36:52.331"/>
+</kw>
+<status status="PASS" starttime="20220206 20:36:52.315" endtime="20220206 20:36:52.331"/>
+</kw>
+<kw name="Exemplos relacionados a datas">
+<kw name="Date" library="FakerLibrary">
+<var>${DATAFAKE}</var>
+<doc>Get a date string between January 1, 1970 and now
+:param pattern: format
+:example: '2008-11-27'</doc>
+<msg timestamp="20220206 20:36:52.332" level="INFO">${DATAFAKE} = 2019-12-14</msg>
+<status status="PASS" starttime="20220206 20:36:52.332" endtime="20220206 20:36:52.332"/>
+</kw>
+<kw name="Month" library="FakerLibrary">
+<var>${MESFAKE}</var>
+<msg timestamp="20220206 20:36:52.333" level="INFO">${MESFAKE} = 11</msg>
+<status status="PASS" starttime="20220206 20:36:52.332" endtime="20220206 20:36:52.333"/>
+</kw>
+<kw name="Year" library="FakerLibrary">
+<var>${ANOFAKE}</var>
+<msg timestamp="20220206 20:36:52.334" level="INFO">${ANOFAKE} = 1994</msg>
+<status status="PASS" starttime="20220206 20:36:52.333" endtime="20220206 20:36:52.334"/>
+</kw>
+<kw name="Day Of Week" library="FakerLibrary">
+<var>${DIADASEMANAFAKE}</var>
+<msg timestamp="20220206 20:36:52.334" level="INFO">${DIADASEMANAFAKE} = Wednesday</msg>
+<status status="PASS" starttime="20220206 20:36:52.334" endtime="20220206 20:36:52.335"/>
+</kw>
+<kw name="Day Of Month" library="FakerLibrary">
+<var>${DIADOMESFAKE}</var>
+<msg timestamp="20220206 20:36:52.336" level="INFO">${DIADOMESFAKE} = 14</msg>
+<status status="PASS" starttime="20220206 20:36:52.335" endtime="20220206 20:36:52.336"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{DATAS}</var>
+<arg>Data Aleatória: ${DATAFAKE}</arg>
+<arg>Mês Aleatório: ${MESFAKE}</arg>
+<arg>Ano Aleatório: ${ANOFAKE}</arg>
+<arg>Dia da Semana Aleatório: ${DIADASEMANAFAKE}</arg>
+<arg>Dia do Mês Aleatório: ${DIADOMESFAKE}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220206 20:36:52.338" level="INFO">@{DATAS} = [ Data Aleatória: 2019-12-14 | Mês Aleatório: 11 | Ano Aleatório: 1994 | Dia da Semana Aleatório: Wednesday | Dia do Mês Aleatório: 14 ]</msg>
+<status status="PASS" starttime="20220206 20:36:52.336" endtime="20220206 20:36:52.339"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{DATAS}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220206 20:36:52.340" level="INFO">Data Aleatória: 2019-12-14</msg>
+<msg timestamp="20220206 20:36:52.341" level="INFO">Mês Aleatório: 11</msg>
+<msg timestamp="20220206 20:36:52.341" level="INFO">Ano Aleatório: 1994</msg>
+<msg timestamp="20220206 20:36:52.341" level="INFO">Dia da Semana Aleatório: Wednesday</msg>
+<msg timestamp="20220206 20:36:52.341" level="INFO">Dia do Mês Aleatório: 14</msg>
+<status status="PASS" starttime="20220206 20:36:52.340" endtime="20220206 20:36:52.341"/>
+</kw>
+<status status="PASS" starttime="20220206 20:36:52.331" endtime="20220206 20:36:52.341"/>
+</kw>
+<kw name="Exemplos diversos">
+<kw name="Email" library="FakerLibrary">
+<var>${EMAILFAKE}</var>
+<msg timestamp="20220206 20:36:52.343" level="INFO">${EMAILFAKE} = stacy75@example.net</msg>
+<status status="PASS" starttime="20220206 20:36:52.342" endtime="20220206 20:36:52.343"/>
+</kw>
+<kw name="Password" library="FakerLibrary">
+<var>${PASSWORDFAKE}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<msg timestamp="20220206 20:36:52.344" level="INFO">${PASSWORDFAKE} = ^Ae(Ty4E_6</msg>
+<status status="PASS" starttime="20220206 20:36:52.343" endtime="20220206 20:36:52.344"/>
+</kw>
+<kw name="Color Name" library="FakerLibrary">
+<var>${CORFAKE}</var>
+<doc>Generate a color name.</doc>
+<msg timestamp="20220206 20:36:52.345" level="INFO">${CORFAKE} = FireBrick</msg>
+<status status="PASS" starttime="20220206 20:36:52.344" endtime="20220206 20:36:52.345"/>
+</kw>
+<kw name="Credit Card Number" library="FakerLibrary">
+<var>${CARTAODECREDITOFAKE}</var>
+<doc>Generate a valid credit card number.</doc>
+<msg timestamp="20220206 20:36:52.346" level="INFO">${CARTAODECREDITOFAKE} = 4113978510342</msg>
+<status status="PASS" starttime="20220206 20:36:52.345" endtime="20220206 20:36:52.346"/>
+</kw>
+<kw name="Word" library="FakerLibrary">
+<var>${PALAVRAFAKE}</var>
+<doc>Generate a word.</doc>
+<msg timestamp="20220206 20:36:52.347" level="INFO">${PALAVRAFAKE} = now</msg>
+<status status="PASS" starttime="20220206 20:36:52.346" endtime="20220206 20:36:52.347"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{OUTROS}</var>
+<arg>E-mail Aleatório: ${EMAILFAKE}</arg>
+<arg>Senha Aleatória: ${PASSWORDFAKE}</arg>
+<arg>Cor Aleatório: ${CORFAKE}</arg>
+<arg>Cartão de Crédito Aleatório: ${CARTAODECREDITOFAKE}</arg>
+<arg>Palavra Aleatória: ${PALAVRAFAKE}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220206 20:36:52.351" level="INFO">@{OUTROS} = [ E-mail Aleatório: stacy75@example.net | Senha Aleatória: ^Ae(Ty4E_6 | Cor Aleatório: FireBrick | Cartão de Crédito Aleatório: 4113978510342 | Palavra Aleatória: now ]</msg>
+<status status="PASS" starttime="20220206 20:36:52.347" endtime="20220206 20:36:52.351"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{OUTROS}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220206 20:36:52.352" level="INFO">E-mail Aleatório: stacy75@example.net</msg>
+<msg timestamp="20220206 20:36:52.352" level="INFO">Senha Aleatória: ^Ae(Ty4E_6</msg>
+<msg timestamp="20220206 20:36:52.352" level="INFO">Cor Aleatório: FireBrick</msg>
+<msg timestamp="20220206 20:36:52.353" level="INFO">Cartão de Crédito Aleatório: 4113978510342</msg>
+<msg timestamp="20220206 20:36:52.353" level="INFO">Palavra Aleatória: now</msg>
+<status status="PASS" starttime="20220206 20:36:52.351" endtime="20220206 20:36:52.353"/>
+</kw>
+<status status="PASS" starttime="20220206 20:36:52.341" endtime="20220206 20:36:52.354"/>
+</kw>
+<status status="PASS" starttime="20220206 20:36:52.313" endtime="20220206 20:36:52.354"/>
+</test>
+<doc>Exemplo de uso da Library Faker</doc>
+<status status="PASS" starttime="20220206 20:36:51.982" endtime="20220206 20:36:52.357"/>
+</suite>
+<status status="PASS" starttime="20220206 20:36:51.939" endtime="20220206 20:36:52.360"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCaseExemploFakerLibrary">Tests.TestCaseExemploFakerLibrary</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
